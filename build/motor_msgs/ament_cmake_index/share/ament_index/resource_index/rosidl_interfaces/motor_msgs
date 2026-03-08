@@ -1,0 +1,4 @@
+msg/BoardStatus.idl
+msg/BoardStatus.msg
+srv/ProbeBoard.idl
+srv/ProbeBoard.srv

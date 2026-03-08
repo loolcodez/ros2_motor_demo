@@ -1,0 +1,1 @@
+/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_generator_c/motor_msgs/msg/detail/board_status__struct.h

@@ -1,0 +1,1 @@
+/home/orangepi/Documents/ros2_motor_demo/src/motor_msgs/msg/BoardStatus.msg

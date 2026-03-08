@@ -1,0 +1,48 @@
+{
+  "package_name": "motor_msgs",
+  "output_dir": "/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_generator_c/motor_msgs",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_adapter/motor_msgs:msg/BoardStatus.idl",
+    "/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_adapter/motor_msgs:srv/ProbeBoard.idl"
+  ],
+  "ros_interface_files": [
+    "/home/orangepi/Documents/ros2_motor_demo/src/motor_msgs/msg/BoardStatus.msg",
+    "/home/orangepi/Documents/ros2_motor_demo/src/motor_msgs/srv/ProbeBoard.srv"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_adapter/motor_msgs/msg/BoardStatus.idl",
+    "/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_adapter/motor_msgs/srv/ProbeBoard.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl"
+  ],
+  "type_description_tuples": [
+    "msg/BoardStatus.idl:/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_generator_type_description/motor_msgs/msg/BoardStatus.json",
+    "srv/ProbeBoard.idl:/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_generator_type_description/motor_msgs/srv/ProbeBoard.json"
+  ]
+}

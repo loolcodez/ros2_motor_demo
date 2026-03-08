@@ -1,0 +1,1 @@
+/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_typesupport_fastrtps_cpp/motor_msgs/msg/detail/board_status__rosidl_typesupport_fastrtps_cpp.hpp

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "motor_msgs__py",
+		"source" : "/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/motor_msgs__py"
+	}
+}

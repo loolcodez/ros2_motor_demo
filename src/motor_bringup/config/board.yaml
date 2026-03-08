@@ -1,0 +1,8 @@
+board_probe:
+  ros__parameters:
+    transport: "serial"
+    device_path: "/dev/ttyS1"
+    baudrate: 115200
+    probe_timeout_ms: 300
+    auto_probe_on_start: true
+    publish_rate_hz: 1.0

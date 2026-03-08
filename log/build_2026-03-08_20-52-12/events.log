@@ -1,0 +1,1387 @@
+[0.000000] (-) TimerEvent: {}
+[0.001894] (motor_msgs) JobQueued: {'identifier': 'motor_msgs', 'dependencies': OrderedDict()}
+[0.002295] (motor_hw) JobQueued: {'identifier': 'motor_hw', 'dependencies': OrderedDict({'motor_msgs': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs'})}
+[0.003184] (motor_bringup) JobQueued: {'identifier': 'motor_bringup', 'dependencies': OrderedDict({'motor_msgs': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs', 'motor_hw': '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw'})}
+[0.003766] (motor_msgs) JobStarted: {'identifier': 'motor_msgs'}
+[0.047183] (motor_msgs) JobProgress: {'identifier': 'motor_msgs', 'progress': 'cmake'}
+[0.049171] (motor_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/orangepi/Documents/ros2_motor_demo/src/motor_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[0.098987] (-) TimerEvent: {}
+[0.200013] (-) TimerEvent: {}
+[0.302549] (-) TimerEvent: {}
+[0.404538] (-) TimerEvent: {}
+[0.416261] (motor_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.504810] (-) TimerEvent: {}
+[0.605853] (-) TimerEvent: {}
+[0.706946] (-) TimerEvent: {}
+[0.796413] (motor_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.807147] (-) TimerEvent: {}
+[0.863494] (motor_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.907408] (-) TimerEvent: {}
+[1.008345] (-) TimerEvent: {}
+[1.109296] (-) TimerEvent: {}
+[1.210338] (-) TimerEvent: {}
+[1.311926] (-) TimerEvent: {}
+[1.336949] (motor_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.409003] (motor_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.410476] (motor_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.412042] (-) TimerEvent: {}
+[1.413266] (motor_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.454562] (motor_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.516706] (-) TimerEvent: {}
+[1.618501] (-) TimerEvent: {}
+[1.720252] (-) TimerEvent: {}
+[1.824343] (-) TimerEvent: {}
+[1.925720] (-) TimerEvent: {}
+[2.026971] (-) TimerEvent: {}
+[2.103859] (motor_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.127237] (-) TimerEvent: {}
+[2.180619] (motor_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.182292] (motor_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.185614] (motor_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.198095] (motor_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.227516] (-) TimerEvent: {}
+[2.328470] (-) TimerEvent: {}
+[2.429386] (-) TimerEvent: {}
+[2.530391] (-) TimerEvent: {}
+[2.631464] (-) TimerEvent: {}
+[2.732428] (-) TimerEvent: {}
+[2.833275] (-) TimerEvent: {}
+[2.934138] (-) TimerEvent: {}
+[3.031111] (motor_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.034312] (-) TimerEvent: {}
+[3.135166] (-) TimerEvent: {}
+[3.236050] (-) TimerEvent: {}
+[3.336915] (-) TimerEvent: {}
+[3.437859] (-) TimerEvent: {}
+[3.520012] (motor_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.538134] (-) TimerEvent: {}
+[3.639079] (-) TimerEvent: {}
+[3.649137] (motor_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[3.676048] (motor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.739319] (-) TimerEvent: {}
+[3.840290] (-) TimerEvent: {}
+[3.941287] (-) TimerEvent: {}
+[3.963028] (motor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.041550] (-) TimerEvent: {}
+[4.142595] (-) TimerEvent: {}
+[4.209201] (motor_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[4.225536] (motor_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[4.242791] (-) TimerEvent: {}
+[4.343763] (-) TimerEvent: {}
+[4.444750] (-) TimerEvent: {}
+[4.545675] (-) TimerEvent: {}
+[4.646771] (-) TimerEvent: {}
+[4.747835] (-) TimerEvent: {}
+[4.848987] (-) TimerEvent: {}
+[4.951386] (-) TimerEvent: {}
+[5.053802] (-) TimerEvent: {}
+[5.156334] (-) TimerEvent: {}
+[5.257310] (-) TimerEvent: {}
+[5.358285] (-) TimerEvent: {}
+[5.459139] (-) TimerEvent: {}
+[5.559967] (-) TimerEvent: {}
+[5.660794] (-) TimerEvent: {}
+[5.761715] (-) TimerEvent: {}
+[5.862908] (-) TimerEvent: {}
+[5.963808] (-) TimerEvent: {}
+[6.064672] (-) TimerEvent: {}
+[6.165622] (-) TimerEvent: {}
+[6.266587] (-) TimerEvent: {}
+[6.367509] (-) TimerEvent: {}
+[6.468535] (-) TimerEvent: {}
+[6.569572] (-) TimerEvent: {}
+[6.670673] (-) TimerEvent: {}
+[6.771668] (-) TimerEvent: {}
+[6.872623] (-) TimerEvent: {}
+[6.973445] (-) TimerEvent: {}
+[7.074367] (-) TimerEvent: {}
+[7.175403] (-) TimerEvent: {}
+[7.276464] (-) TimerEvent: {}
+[7.378655] (-) TimerEvent: {}
+[7.480309] (-) TimerEvent: {}
+[7.582168] (-) TimerEvent: {}
+[7.683756] (-) TimerEvent: {}
+[7.784681] (-) TimerEvent: {}
+[7.885773] (-) TimerEvent: {}
+[7.986981] (-) TimerEvent: {}
+[8.087881] (-) TimerEvent: {}
+[8.188756] (-) TimerEvent: {}
+[8.289735] (-) TimerEvent: {}
+[8.350590] (motor_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[8.390001] (-) TimerEvent: {}
+[8.490876] (-) TimerEvent: {}
+[8.591745] (-) TimerEvent: {}
+[8.692710] (-) TimerEvent: {}
+[8.793703] (-) TimerEvent: {}
+[8.894820] (-) TimerEvent: {}
+[8.995692] (-) TimerEvent: {}
+[9.096547] (-) TimerEvent: {}
+[9.197503] (-) TimerEvent: {}
+[9.298467] (-) TimerEvent: {}
+[9.399432] (-) TimerEvent: {}
+[9.500564] (-) TimerEvent: {}
+[9.601571] (-) TimerEvent: {}
+[9.702942] (-) TimerEvent: {}
+[9.804360] (-) TimerEvent: {}
+[9.906135] (-) TimerEvent: {}
+[10.006975] (-) TimerEvent: {}
+[10.107909] (-) TimerEvent: {}
+[10.208959] (-) TimerEvent: {}
+[10.310046] (-) TimerEvent: {}
+[10.411080] (-) TimerEvent: {}
+[10.512026] (-) TimerEvent: {}
+[10.613820] (-) TimerEvent: {}
+[10.715892] (-) TimerEvent: {}
+[10.816811] (-) TimerEvent: {}
+[10.918112] (-) TimerEvent: {}
+[11.020090] (-) TimerEvent: {}
+[11.084987] (motor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.120406] (-) TimerEvent: {}
+[11.221317] (-) TimerEvent: {}
+[11.322216] (-) TimerEvent: {}
+[11.423056] (-) TimerEvent: {}
+[11.523907] (-) TimerEvent: {}
+[11.624852] (-) TimerEvent: {}
+[11.725889] (-) TimerEvent: {}
+[11.826895] (-) TimerEvent: {}
+[11.927788] (-) TimerEvent: {}
+[12.028697] (-) TimerEvent: {}
+[12.129542] (-) TimerEvent: {}
+[12.230421] (-) TimerEvent: {}
+[12.331378] (-) TimerEvent: {}
+[12.432420] (-) TimerEvent: {}
+[12.533440] (-) TimerEvent: {}
+[12.634387] (-) TimerEvent: {}
+[12.735303] (-) TimerEvent: {}
+[12.836224] (-) TimerEvent: {}
+[12.937169] (-) TimerEvent: {}
+[13.038536] (-) TimerEvent: {}
+[13.140252] (-) TimerEvent: {}
+[13.242037] (-) TimerEvent: {}
+[13.343933] (-) TimerEvent: {}
+[13.444892] (-) TimerEvent: {}
+[13.545806] (-) TimerEvent: {}
+[13.646862] (-) TimerEvent: {}
+[13.747970] (-) TimerEvent: {}
+[13.849112] (-) TimerEvent: {}
+[13.950270] (-) TimerEvent: {}
+[14.051075] (-) TimerEvent: {}
+[14.151919] (-) TimerEvent: {}
+[14.252756] (-) TimerEvent: {}
+[14.353713] (-) TimerEvent: {}
+[14.454689] (-) TimerEvent: {}
+[14.500892] (motor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.520960] (motor_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[14.554940] (-) TimerEvent: {}
+[14.656044] (-) TimerEvent: {}
+[14.757035] (-) TimerEvent: {}
+[14.857991] (-) TimerEvent: {}
+[14.958844] (-) TimerEvent: {}
+[15.059815] (-) TimerEvent: {}
+[15.160956] (-) TimerEvent: {}
+[15.261991] (-) TimerEvent: {}
+[15.327721] (motor_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[15.362190] (-) TimerEvent: {}
+[15.463186] (-) TimerEvent: {}
+[15.564283] (-) TimerEvent: {}
+[15.665257] (-) TimerEvent: {}
+[15.766240] (-) TimerEvent: {}
+[15.867142] (-) TimerEvent: {}
+[15.968183] (-) TimerEvent: {}
+[16.069461] (-) TimerEvent: {}
+[16.170516] (-) TimerEvent: {}
+[16.271557] (-) TimerEvent: {}
+[16.372601] (-) TimerEvent: {}
+[16.473590] (-) TimerEvent: {}
+[16.574784] (-) TimerEvent: {}
+[16.675829] (-) TimerEvent: {}
+[16.776679] (-) TimerEvent: {}
+[16.877544] (-) TimerEvent: {}
+[16.978411] (-) TimerEvent: {}
+[17.079254] (-) TimerEvent: {}
+[17.180092] (-) TimerEvent: {}
+[17.280885] (-) TimerEvent: {}
+[17.381675] (-) TimerEvent: {}
+[17.482530] (-) TimerEvent: {}
+[17.583338] (-) TimerEvent: {}
+[17.684150] (-) TimerEvent: {}
+[17.784991] (-) TimerEvent: {}
+[17.886043] (-) TimerEvent: {}
+[17.987069] (-) TimerEvent: {}
+[18.088003] (-) TimerEvent: {}
+[18.188824] (-) TimerEvent: {}
+[18.289643] (-) TimerEvent: {}
+[18.390518] (-) TimerEvent: {}
+[18.491343] (-) TimerEvent: {}
+[18.592295] (-) TimerEvent: {}
+[18.693414] (-) TimerEvent: {}
+[18.794972] (-) TimerEvent: {}
+[18.795819] (motor_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[18.895238] (-) TimerEvent: {}
+[18.997086] (-) TimerEvent: {}
+[19.098841] (-) TimerEvent: {}
+[19.127527] (motor_msgs) StdoutLine: {'line': b'-- Configuring done (19.0s)\n'}
+[19.199100] (-) TimerEvent: {}
+[19.300668] (-) TimerEvent: {}
+[19.380170] (motor_msgs) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[19.400903] (-) TimerEvent: {}
+[19.475719] (motor_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/orangepi/Documents/ros2_motor_demo/build/motor_msgs\n'}
+[19.501210] (-) TimerEvent: {}
+[19.524822] (motor_msgs) CommandEnded: {'returncode': 0}
+[19.530355] (motor_msgs) JobProgress: {'identifier': 'motor_msgs', 'progress': 'build'}
+[19.531242] (motor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs', '--', '-j4', '-l4'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[19.601525] (-) TimerEvent: {}
+[19.702808] (-) TimerEvent: {}
+[19.804011] (-) TimerEvent: {}
+[19.815193] (motor_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[19.869665] (motor_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_motor_msgs\n'}
+[19.904320] (-) TimerEvent: {}
+[20.005517] (-) TimerEvent: {}
+[20.107033] (-) TimerEvent: {}
+[20.208430] (-) TimerEvent: {}
+[20.309849] (-) TimerEvent: {}
+[20.411824] (-) TimerEvent: {}
+[20.513560] (-) TimerEvent: {}
+[20.615103] (-) TimerEvent: {}
+[20.716570] (-) TimerEvent: {}
+[20.818035] (-) TimerEvent: {}
+[20.919541] (-) TimerEvent: {}
+[21.020842] (-) TimerEvent: {}
+[21.122284] (-) TimerEvent: {}
+[21.223654] (-) TimerEvent: {}
+[21.310485] (motor_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[21.315837] (motor_msgs) StdoutLine: {'line': b'creating motor_msgs.egg-info\n'}
+[21.338164] (-) TimerEvent: {}
+[21.439498] (-) TimerEvent: {}
+[21.478112] (motor_msgs) StdoutLine: {'line': b'writing motor_msgs.egg-info/PKG-INFO\n'}
+[21.479921] (motor_msgs) StdoutLine: {'line': b'writing dependency_links to motor_msgs.egg-info/dependency_links.txt\n'}
+[21.481488] (motor_msgs) StdoutLine: {'line': b'writing top-level names to motor_msgs.egg-info/top_level.txt\n'}
+[21.482850] (motor_msgs) StdoutLine: {'line': b"writing manifest file 'motor_msgs.egg-info/SOURCES.txt'\n"}
+[21.542242] (-) TimerEvent: {}
+[21.643585] (-) TimerEvent: {}
+[21.689299] (motor_msgs) StdoutLine: {'line': b'[  2%] Built target motor_msgs__rosidl_generator_type_description\n'}
+[21.743867] (-) TimerEvent: {}
+[21.748615] (motor_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[21.807709] (motor_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[21.844141] (-) TimerEvent: {}
+[21.945262] (-) TimerEvent: {}
+[22.047907] (-) TimerEvent: {}
+[22.112693] (motor_msgs) StdoutLine: {'line': b"reading manifest file 'motor_msgs.egg-info/SOURCES.txt'\n"}
+[22.116599] (motor_msgs) StdoutLine: {'line': b"writing manifest file 'motor_msgs.egg-info/SOURCES.txt'\n"}
+[22.148222] (-) TimerEvent: {}
+[22.250134] (-) TimerEvent: {}
+[22.351902] (-) TimerEvent: {}
+[22.453683] (-) TimerEvent: {}
+[22.493112] (motor_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_motor_msgs_egg\n'}
+[22.554162] (-) TimerEvent: {}
+[22.655095] (-) TimerEvent: {}
+[22.756289] (-) TimerEvent: {}
+[22.857144] (-) TimerEvent: {}
+[22.958047] (-) TimerEvent: {}
+[23.058984] (-) TimerEvent: {}
+[23.160636] (-) TimerEvent: {}
+[23.262422] (-) TimerEvent: {}
+[23.363841] (-) TimerEvent: {}
+[23.465068] (-) TimerEvent: {}
+[23.566310] (-) TimerEvent: {}
+[23.667462] (-) TimerEvent: {}
+[23.768603] (-) TimerEvent: {}
+[23.869823] (-) TimerEvent: {}
+[23.970813] (-) TimerEvent: {}
+[24.071696] (-) TimerEvent: {}
+[24.173195] (-) TimerEvent: {}
+[24.274963] (-) TimerEvent: {}
+[24.376391] (-) TimerEvent: {}
+[24.477370] (-) TimerEvent: {}
+[24.579160] (-) TimerEvent: {}
+[24.604687] (motor_msgs) StdoutLine: {'line': b'[  6%] Built target motor_msgs__cpp\n'}
+[24.680733] (-) TimerEvent: {}
+[24.784105] (-) TimerEvent: {}
+[24.886132] (-) TimerEvent: {}
+[24.953685] (motor_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_msgs/msg/detail/board_status__description.c.o\x1b[0m\n'}
+[24.956032] (motor_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_msgs/srv/detail/probe_board__description.c.o\x1b[0m\n'}
+[24.976305] (motor_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_msgs/msg/detail/board_status__functions.c.o\x1b[0m\n'}
+[24.986446] (-) TimerEvent: {}
+[24.988577] (motor_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_msgs/msg/detail/board_status__type_support.c.o\x1b[0m\n'}
+[25.086722] (-) TimerEvent: {}
+[25.188513] (-) TimerEvent: {}
+[25.243189] (motor_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_msgs/srv/detail/probe_board__functions.c.o\x1b[0m\n'}
+[25.288857] (-) TimerEvent: {}
+[25.380546] (motor_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_msgs/srv/detail/probe_board__type_support.c.o\x1b[0m\n'}
+[25.389158] (-) TimerEvent: {}
+[25.491315] (-) TimerEvent: {}
+[25.593268] (-) TimerEvent: {}
+[25.694875] (-) TimerEvent: {}
+[25.788674] (motor_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libmotor_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[25.795106] (-) TimerEvent: {}
+[25.896156] (-) TimerEvent: {}
+[25.997143] (-) TimerEvent: {}
+[26.043717] (motor_msgs) StdoutLine: {'line': b'[ 22%] Built target motor_msgs__rosidl_generator_c\n'}
+[26.095465] (motor_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[26.097256] (-) TimerEvent: {}
+[26.098506] (motor_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[26.101472] (motor_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[26.103686] (motor_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[26.197587] (-) TimerEvent: {}
+[26.298592] (-) TimerEvent: {}
+[26.400070] (-) TimerEvent: {}
+[26.501806] (-) TimerEvent: {}
+[26.603742] (-) TimerEvent: {}
+[26.705730] (-) TimerEvent: {}
+[26.807306] (-) TimerEvent: {}
+[26.908673] (-) TimerEvent: {}
+[27.010138] (-) TimerEvent: {}
+[27.111622] (-) TimerEvent: {}
+[27.213044] (-) TimerEvent: {}
+[27.314453] (-) TimerEvent: {}
+[27.415880] (-) TimerEvent: {}
+[27.517457] (-) TimerEvent: {}
+[27.619164] (-) TimerEvent: {}
+[27.720760] (-) TimerEvent: {}
+[27.822430] (-) TimerEvent: {}
+[27.924333] (-) TimerEvent: {}
+[28.027407] (-) TimerEvent: {}
+[28.129101] (-) TimerEvent: {}
+[28.230161] (-) TimerEvent: {}
+[28.331253] (-) TimerEvent: {}
+[28.432545] (-) TimerEvent: {}
+[28.534302] (-) TimerEvent: {}
+[28.611932] (motor_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_msgs/msg/board_status__type_support.cpp.o\x1b[0m\n'}
+[28.617547] (motor_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_msgs/msg/board_status__type_support.cpp.o\x1b[0m\n'}
+[28.634561] (-) TimerEvent: {}
+[28.735565] (-) TimerEvent: {}
+[28.836567] (-) TimerEvent: {}
+[28.937790] (-) TimerEvent: {}
+[28.999847] (motor_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_msgs/srv/probe_board__type_support.cpp.o\x1b[0m\n'}
+[29.038074] (-) TimerEvent: {}
+[29.139214] (-) TimerEvent: {}
+[29.240418] (-) TimerEvent: {}
+[29.339508] (motor_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libmotor_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[29.340678] (-) TimerEvent: {}
+[29.441835] (-) TimerEvent: {}
+[29.543174] (-) TimerEvent: {}
+[29.615657] (motor_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_msgs/msg/detail/dds_fastrtps/board_status__type_support.cpp.o\x1b[0m\n'}
+[29.643511] (-) TimerEvent: {}
+[29.682755] (motor_msgs) StdoutLine: {'line': b'[ 43%] Built target motor_msgs__rosidl_typesupport_c\n'}
+[29.724868] (motor_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_msgs/msg/detail/board_status__type_support_c.cpp.o\x1b[0m\n'}
+[29.743806] (-) TimerEvent: {}
+[29.770261] (motor_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_msgs/srv/detail/dds_fastrtps/probe_board__type_support.cpp.o\x1b[0m\n'}
+[29.844099] (-) TimerEvent: {}
+[29.946327] (-) TimerEvent: {}
+[30.048123] (-) TimerEvent: {}
+[30.149679] (-) TimerEvent: {}
+[30.251685] (-) TimerEvent: {}
+[30.353525] (-) TimerEvent: {}
+[30.455404] (-) TimerEvent: {}
+[30.557502] (-) TimerEvent: {}
+[30.659634] (-) TimerEvent: {}
+[30.761872] (-) TimerEvent: {}
+[30.864057] (-) TimerEvent: {}
+[30.967927] (-) TimerEvent: {}
+[31.075580] (-) TimerEvent: {}
+[31.198255] (-) TimerEvent: {}
+[31.318241] (-) TimerEvent: {}
+[31.446292] (-) TimerEvent: {}
+[31.550460] (-) TimerEvent: {}
+[31.667308] (-) TimerEvent: {}
+[31.768532] (-) TimerEvent: {}
+[31.869781] (-) TimerEvent: {}
+[31.971010] (-) TimerEvent: {}
+[32.072473] (-) TimerEvent: {}
+[32.173611] (-) TimerEvent: {}
+[32.275974] (-) TimerEvent: {}
+[32.289101] (motor_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_msgs/srv/probe_board__type_support.cpp.o\x1b[0m\n'}
+[32.376381] (-) TimerEvent: {}
+[32.477545] (-) TimerEvent: {}
+[32.578699] (-) TimerEvent: {}
+[32.679848] (-) TimerEvent: {}
+[32.781037] (-) TimerEvent: {}
+[32.883121] (-) TimerEvent: {}
+[32.985150] (-) TimerEvent: {}
+[33.087474] (-) TimerEvent: {}
+[33.189854] (-) TimerEvent: {}
+[33.291999] (-) TimerEvent: {}
+[33.414231] (-) TimerEvent: {}
+[33.518229] (-) TimerEvent: {}
+[33.622227] (-) TimerEvent: {}
+[33.724239] (-) TimerEvent: {}
+[33.826626] (-) TimerEvent: {}
+[33.928895] (-) TimerEvent: {}
+[34.031408] (-) TimerEvent: {}
+[34.133853] (-) TimerEvent: {}
+[34.236305] (-) TimerEvent: {}
+[34.338584] (-) TimerEvent: {}
+[34.441000] (-) TimerEvent: {}
+[34.529296] (motor_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_msgs/srv/detail/probe_board__type_support_c.cpp.o\x1b[0m\n'}
+[34.541296] (-) TimerEvent: {}
+[34.643573] (-) TimerEvent: {}
+[34.697432] (motor_msgs) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[34.743970] (-) TimerEvent: {}
+[34.848012] (-) TimerEvent: {}
+[34.949762] (-) TimerEvent: {}
+[35.051662] (-) TimerEvent: {}
+[35.153523] (-) TimerEvent: {}
+[35.255556] (-) TimerEvent: {}
+[35.357712] (-) TimerEvent: {}
+[35.460075] (-) TimerEvent: {}
+[35.562183] (-) TimerEvent: {}
+[35.664132] (-) TimerEvent: {}
+[35.766440] (-) TimerEvent: {}
+[35.800878] (motor_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libmotor_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[35.866732] (-) TimerEvent: {}
+[35.968723] (-) TimerEvent: {}
+[36.070469] (-) TimerEvent: {}
+[36.138785] (motor_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libmotor_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[36.170756] (-) TimerEvent: {}
+[36.271894] (-) TimerEvent: {}
+[36.374173] (-) TimerEvent: {}
+[36.476730] (-) TimerEvent: {}
+[36.578971] (-) TimerEvent: {}
+[36.640250] (motor_msgs) StdoutLine: {'line': b'[ 59%] Built target motor_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[36.679228] (-) TimerEvent: {}
+[36.699069] (motor_msgs) StdoutLine: {'line': b'[ 61%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[36.779458] (-) TimerEvent: {}
+[36.894333] (-) TimerEvent: {}
+[36.975355] (motor_msgs) StdoutLine: {'line': b'[ 61%] Built target motor_msgs__rosidl_typesupport_cpp\n'}
+[36.994615] (-) TimerEvent: {}
+[37.096288] (-) TimerEvent: {}
+[37.198747] (-) TimerEvent: {}
+[37.300265] (-) TimerEvent: {}
+[37.402039] (-) TimerEvent: {}
+[37.503995] (-) TimerEvent: {}
+[37.605775] (-) TimerEvent: {}
+[37.707557] (-) TimerEvent: {}
+[37.767666] (motor_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_msgs/srv/detail/probe_board__type_support.c.o\x1b[0m\n'}
+[37.807799] (-) TimerEvent: {}
+[37.823464] (motor_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_msgs/msg/detail/board_status__type_support.c.o\x1b[0m\n'}
+[37.908044] (-) TimerEvent: {}
+[38.009887] (-) TimerEvent: {}
+[38.111690] (-) TimerEvent: {}
+[38.172320] (motor_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libmotor_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[38.211987] (-) TimerEvent: {}
+[38.313970] (-) TimerEvent: {}
+[38.398338] (motor_msgs) StdoutLine: {'line': b'[ 68%] Built target motor_msgs__rosidl_typesupport_introspection_c\n'}
+[38.414131] (-) TimerEvent: {}
+[38.515097] (-) TimerEvent: {}
+[38.616038] (-) TimerEvent: {}
+[38.717006] (-) TimerEvent: {}
+[38.818036] (-) TimerEvent: {}
+[38.919628] (-) TimerEvent: {}
+[39.016681] (motor_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmotor_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[39.019835] (-) TimerEvent: {}
+[39.120876] (-) TimerEvent: {}
+[39.222135] (-) TimerEvent: {}
+[39.323524] (-) TimerEvent: {}
+[39.350480] (motor_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_msgs/srv/detail/probe_board__type_support.cpp.o\x1b[0m\n'}
+[39.351698] (motor_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/motor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_msgs/msg/detail/board_status__type_support.cpp.o\x1b[0m\n'}
+[39.423786] (-) TimerEvent: {}
+[39.525645] (-) TimerEvent: {}
+[39.627679] (-) TimerEvent: {}
+[39.715737] (motor_msgs) StdoutLine: {'line': b'[ 75%] Built target motor_msgs__rosidl_typesupport_fastrtps_c\n'}
+[39.727925] (-) TimerEvent: {}
+[39.828929] (-) TimerEvent: {}
+[39.930122] (-) TimerEvent: {}
+[40.032294] (-) TimerEvent: {}
+[40.134409] (-) TimerEvent: {}
+[40.236224] (-) TimerEvent: {}
+[40.338242] (-) TimerEvent: {}
+[40.440204] (-) TimerEvent: {}
+[40.542236] (-) TimerEvent: {}
+[40.644175] (-) TimerEvent: {}
+[40.745892] (-) TimerEvent: {}
+[40.847984] (-) TimerEvent: {}
+[40.949058] (-) TimerEvent: {}
+[41.050162] (-) TimerEvent: {}
+[41.151214] (-) TimerEvent: {}
+[41.252290] (-) TimerEvent: {}
+[41.353369] (-) TimerEvent: {}
+[41.454500] (-) TimerEvent: {}
+[41.555503] (-) TimerEvent: {}
+[41.656509] (-) TimerEvent: {}
+[41.757539] (-) TimerEvent: {}
+[41.858615] (-) TimerEvent: {}
+[41.959649] (-) TimerEvent: {}
+[42.060699] (-) TimerEvent: {}
+[42.118693] (motor_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libmotor_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[42.160937] (-) TimerEvent: {}
+[42.262065] (-) TimerEvent: {}
+[42.363167] (-) TimerEvent: {}
+[42.464210] (-) TimerEvent: {}
+[42.565201] (-) TimerEvent: {}
+[42.666185] (-) TimerEvent: {}
+[42.728872] (motor_msgs) StdoutLine: {'line': b'[ 77%] Built target motor_msgs__rosidl_typesupport_introspection_cpp\n'}
+[42.766468] (-) TimerEvent: {}
+[42.821800] (motor_msgs) StdoutLine: {'line': b'[ 77%] Built target motor_msgs\n'}
+[42.866775] (-) TimerEvent: {}
+[42.921688] (motor_msgs) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[42.966973] (-) TimerEvent: {}
+[43.067995] (-) TimerEvent: {}
+[43.171622] (-) TimerEvent: {}
+[43.273396] (-) TimerEvent: {}
+[43.375035] (-) TimerEvent: {}
+[43.476556] (-) TimerEvent: {}
+[43.578119] (-) TimerEvent: {}
+[43.679546] (-) TimerEvent: {}
+[43.780984] (-) TimerEvent: {}
+[43.881865] (-) TimerEvent: {}
+[43.982772] (-) TimerEvent: {}
+[44.083661] (-) TimerEvent: {}
+[44.184578] (-) TimerEvent: {}
+[44.285444] (-) TimerEvent: {}
+[44.386319] (-) TimerEvent: {}
+[44.487151] (-) TimerEvent: {}
+[44.588009] (-) TimerEvent: {}
+[44.688836] (-) TimerEvent: {}
+[44.789696] (-) TimerEvent: {}
+[44.890553] (-) TimerEvent: {}
+[44.991395] (-) TimerEvent: {}
+[45.092242] (-) TimerEvent: {}
+[45.193075] (-) TimerEvent: {}
+[45.293948] (-) TimerEvent: {}
+[45.394793] (-) TimerEvent: {}
+[45.495610] (-) TimerEvent: {}
+[45.596378] (-) TimerEvent: {}
+[45.697269] (-) TimerEvent: {}
+[45.798103] (-) TimerEvent: {}
+[45.899124] (-) TimerEvent: {}
+[46.000055] (-) TimerEvent: {}
+[46.101126] (-) TimerEvent: {}
+[46.202257] (-) TimerEvent: {}
+[46.303392] (-) TimerEvent: {}
+[46.404559] (-) TimerEvent: {}
+[46.477747] (motor_msgs) StdoutLine: {'line': b'[ 79%] Built target motor_msgs__py\n'}
+[46.504844] (-) TimerEvent: {}
+[46.578390] (motor_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_generator_py.dir/rosidl_generator_py/motor_msgs/msg/_board_status_s.c.o\x1b[0m\n'}
+[46.579410] (motor_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/motor_msgs__rosidl_generator_py.dir/rosidl_generator_py/motor_msgs/srv/_probe_board_s.c.o\x1b[0m\n'}
+[46.605211] (-) TimerEvent: {}
+[46.706956] (-) TimerEvent: {}
+[46.808746] (-) TimerEvent: {}
+[46.909785] (-) TimerEvent: {}
+[47.010862] (-) TimerEvent: {}
+[47.111880] (-) TimerEvent: {}
+[47.213206] (-) TimerEvent: {}
+[47.314583] (-) TimerEvent: {}
+[47.415649] (-) TimerEvent: {}
+[47.516716] (-) TimerEvent: {}
+[47.617799] (-) TimerEvent: {}
+[47.718852] (-) TimerEvent: {}
+[47.723773] (motor_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library libmotor_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[47.819238] (-) TimerEvent: {}
+[47.920501] (-) TimerEvent: {}
+[48.021450] (-) TimerEvent: {}
+[48.040297] (motor_msgs) StdoutLine: {'line': b'[ 86%] Built target motor_msgs__rosidl_generator_py\n'}
+[48.121754] (-) TimerEvent: {}
+[48.139895] (motor_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/motor_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/motor_msgs/_motor_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[48.140969] (motor_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/motor_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/motor_msgs/_motor_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[48.142525] (motor_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/motor_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/motor_msgs/_motor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[48.222088] (-) TimerEvent: {}
+[48.323130] (-) TimerEvent: {}
+[48.425188] (-) TimerEvent: {}
+[48.527083] (-) TimerEvent: {}
+[48.630227] (-) TimerEvent: {}
+[48.734275] (-) TimerEvent: {}
+[48.838275] (-) TimerEvent: {}
+[48.938516] (motor_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/motor_msgs/motor_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[48.939601] (-) TimerEvent: {}
+[48.950002] (motor_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/motor_msgs/motor_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[49.012519] (motor_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/motor_msgs/motor_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[49.042278] (-) TimerEvent: {}
+[49.150301] (-) TimerEvent: {}
+[49.211086] (motor_msgs) StdoutLine: {'line': b'[100%] Built target motor_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[49.213468] (motor_msgs) StdoutLine: {'line': b'[100%] Built target motor_msgs_s__rosidl_typesupport_introspection_c\n'}
+[49.234666] (motor_msgs) StdoutLine: {'line': b'[100%] Built target motor_msgs_s__rosidl_typesupport_c\n'}
+[49.250572] (-) TimerEvent: {}
+[49.299496] (motor_msgs) CommandEnded: {'returncode': 0}
+[49.306424] (motor_msgs) JobProgress: {'identifier': 'motor_msgs', 'progress': 'install'}
+[49.350849] (-) TimerEvent: {}
+[49.359498] (motor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[49.405746] (motor_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[49.413078] (motor_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[49.415142] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/ament_index/resource_index/rosidl_interfaces/motor_msgs\n'}
+[49.451139] (-) TimerEvent: {}
+[49.461214] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/msg/BoardStatus.json\n'}
+[49.506948] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/srv/ProbeBoard.json\n'}
+[49.551377] (-) TimerEvent: {}
+[49.553036] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/board_status.h\n'}
+[49.594989] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__functions.h\n'}
+[49.637687] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__struct.h\n'}
+[49.651612] (-) TimerEvent: {}
+[49.681683] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__type_support.h\n'}
+[49.723844] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[49.751854] (-) TimerEvent: {}
+[49.766650] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__functions.h\n'}
+[49.808110] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__struct.h\n'}
+[49.850644] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__type_support.h\n'}
+[49.851939] (-) TimerEvent: {}
+[49.892638] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/probe_board.h\n'}
+[49.935401] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/environment/library_path.sh\n'}
+[49.952275] (-) TimerEvent: {}
+[49.980982] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/environment/library_path.dsv\n'}
+[50.026133] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__rosidl_typesupport_fastrtps_c.h\n'}
+[50.052514] (-) TimerEvent: {}
+[50.068683] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[50.110496] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__rosidl_typesupport_fastrtps_c.h\n'}
+[50.152776] (-) TimerEvent: {}
+[50.154104] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__rosidl_typesupport_introspection_c.h\n'}
+[50.196227] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[50.238867] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__rosidl_typesupport_introspection_c.h\n'}
+[50.253031] (-) TimerEvent: {}
+[50.283934] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/board_status.hpp\n'}
+[50.325862] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__builder.hpp\n'}
+[50.353303] (-) TimerEvent: {}
+[50.368254] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__struct.hpp\n'}
+[50.410315] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__traits.hpp\n'}
+[50.452501] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__type_support.hpp\n'}
+[50.453392] (-) TimerEvent: {}
+[50.494950] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[50.536292] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__builder.hpp\n'}
+[50.553695] (-) TimerEvent: {}
+[50.579076] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__struct.hpp\n'}
+[50.620608] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__traits.hpp\n'}
+[50.653988] (-) TimerEvent: {}
+[50.662667] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__type_support.hpp\n'}
+[50.704255] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/probe_board.hpp\n'}
+[50.748456] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.754182] (-) TimerEvent: {}
+[50.790836] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[50.831989] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.854437] (-) TimerEvent: {}
+[50.875435] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/msg/detail/board_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.917669] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/include/motor_msgs/motor_msgs/srv/detail/probe_board__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.954686] (-) TimerEvent: {}
+[50.960706] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/environment/pythonpath.sh\n'}
+[51.003563] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/environment/pythonpath.dsv\n'}
+[51.046555] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[51.054917] (-) TimerEvent: {}
+[51.088933] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[51.131203] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[51.155193] (-) TimerEvent: {}
+[51.173704] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[51.218614] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/__init__.py\n'}
+[51.255451] (-) TimerEvent: {}
+[51.261019] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/_motor_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[51.302649] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/_motor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[51.344656] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/_motor_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[51.355688] (-) TimerEvent: {}
+[51.386740] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/motor_msgs_s__rosidl_typesupport_c.so\n'}
+[51.428348] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/motor_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[51.455931] (-) TimerEvent: {}
+[51.471266] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/motor_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[51.514835] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/msg/__init__.py\n'}
+[51.556241] (-) TimerEvent: {}
+[51.559167] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/msg/_board_status.py\n'}
+[51.604656] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/msg/_board_status_s.c\n'}
+[51.650561] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/srv/__init__.py\n'}
+[51.656518] (-) TimerEvent: {}
+[51.695161] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/srv/_probe_board.py\n'}
+[51.741589] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/srv/_probe_board_s.c\n'}
+[51.756818] (-) TimerEvent: {}
+[51.788408] (motor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/motor_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[51.790658] (motor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/motor_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[51.791923] (motor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/motor_msgs_s__rosidl_typesupport_c.so\n'}
+[51.792956] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/msg/BoardStatus.idl\n'}
+[51.839450] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/srv/ProbeBoard.idl\n'}
+[51.857066] (-) TimerEvent: {}
+[51.885493] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/msg/BoardStatus.msg\n'}
+[51.931769] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/srv/ProbeBoard.srv\n'}
+[51.957344] (-) TimerEvent: {}
+[51.978531] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/ament_index/resource_index/package_run_dependencies/motor_msgs\n'}
+[52.025823] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/ament_index/resource_index/parent_prefix_path/motor_msgs\n'}
+[52.057637] (-) TimerEvent: {}
+[52.072173] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/environment/ament_prefix_path.sh\n'}
+[52.118092] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/environment/ament_prefix_path.dsv\n'}
+[52.157992] (-) TimerEvent: {}
+[52.164446] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/environment/path.sh\n'}
+[52.210925] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/environment/path.dsv\n'}
+[52.256798] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/local_setup.bash\n'}
+[52.258041] (-) TimerEvent: {}
+[52.305393] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/local_setup.sh\n'}
+[52.351789] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/local_setup.zsh\n'}
+[52.358335] (-) TimerEvent: {}
+[52.396610] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/local_setup.dsv\n'}
+[52.438633] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.dsv\n'}
+[52.458608] (-) TimerEvent: {}
+[52.481585] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/ament_index/resource_index/packages/motor_msgs\n'}
+[52.523862] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[52.558881] (-) TimerEvent: {}
+[52.567480] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[52.609552] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[52.651030] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[52.659108] (-) TimerEvent: {}
+[52.694369] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[52.735899] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[52.759341] (-) TimerEvent: {}
+[52.778962] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[52.821975] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgsConfig.cmake\n'}
+[52.859592] (-) TimerEvent: {}
+[52.863931] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgsConfig-version.cmake\n'}
+[52.906145] (motor_msgs) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.xml\n'}
+[52.947886] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_generator_c.so\n'}
+[52.950218] (motor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_generator_c.so" to ""\n'}
+[52.951191] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[52.953171] (motor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[52.954003] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_introspection_c.so\n'}
+[52.955662] (motor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[52.956416] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_c.so\n'}
+[52.958006] (motor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_c.so" to ""\n'}
+[52.958742] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[52.959674] (-) TimerEvent: {}
+[52.961257] (motor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[52.962312] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[52.964074] (motor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[52.964796] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_cpp.so\n'}
+[52.966678] (motor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[53.060036] (-) TimerEvent: {}
+[53.161069] (-) TimerEvent: {}
+[53.220395] (motor_msgs) StdoutLine: {'line': b"Listing '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs'...\n"}
+[53.221336] (motor_msgs) StdoutLine: {'line': b"Compiling '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/__init__.py'...\n"}
+[53.221866] (motor_msgs) StdoutLine: {'line': b"Listing '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/msg'...\n"}
+[53.222427] (motor_msgs) StdoutLine: {'line': b"Compiling '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/msg/__init__.py'...\n"}
+[53.222906] (motor_msgs) StdoutLine: {'line': b"Compiling '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/msg/_board_status.py'...\n"}
+[53.223375] (motor_msgs) StdoutLine: {'line': b"Listing '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/srv'...\n"}
+[53.223842] (motor_msgs) StdoutLine: {'line': b"Compiling '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/srv/__init__.py'...\n"}
+[53.224308] (motor_msgs) StdoutLine: {'line': b"Compiling '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages/motor_msgs/srv/_probe_board.py'...\n"}
+[53.261417] (-) TimerEvent: {}
+[53.282282] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_generator_py.so\n'}
+[53.284221] (motor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/libmotor_msgs__rosidl_generator_py.so" to ""\n'}
+[53.284946] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_generator_cExport.cmake\n'}
+[53.285590] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[53.286325] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[53.286944] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[53.287533] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[53.288147] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[53.288736] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgs__rosidl_typesupport_cExport.cmake\n'}
+[53.289331] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[53.289955] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_generator_cppExport.cmake\n'}
+[53.290619] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[53.291257] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[53.291887] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[53.292467] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[53.293094] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[53.293719] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/motor_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[53.294497] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_generator_pyExport.cmake\n'}
+[53.295380] (motor_msgs) StdoutLine: {'line': b'-- Installing: /home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake/export_motor_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[53.306927] (motor_msgs) CommandEnded: {'returncode': 0}
+[53.361591] (-) TimerEvent: {}
+[53.463616] (-) TimerEvent: {}
+[53.481690] (motor_msgs) JobEnded: {'identifier': 'motor_msgs', 'rc': 0}
+[53.486838] (motor_hw) JobStarted: {'identifier': 'motor_hw'}
+[53.530489] (motor_hw) JobProgress: {'identifier': 'motor_hw', 'progress': 'cmake'}
+[53.532410] (motor_hw) Command: {'cmd': ['/usr/bin/cmake', '/home/orangepi/Documents/ros2_motor_demo/src/motor_hw', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[53.563925] (-) TimerEvent: {}
+[53.664970] (-) TimerEvent: {}
+[53.766167] (-) TimerEvent: {}
+[53.867262] (-) TimerEvent: {}
+[53.907679] (motor_hw) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[53.967520] (-) TimerEvent: {}
+[54.068501] (-) TimerEvent: {}
+[54.169566] (-) TimerEvent: {}
+[54.270689] (-) TimerEvent: {}
+[54.289319] (motor_hw) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[54.356000] (motor_hw) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[54.370960] (-) TimerEvent: {}
+[54.471990] (-) TimerEvent: {}
+[54.573070] (-) TimerEvent: {}
+[54.674204] (-) TimerEvent: {}
+[54.775344] (-) TimerEvent: {}
+[54.876535] (-) TimerEvent: {}
+[54.892179] (motor_hw) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[54.966364] (motor_hw) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[54.967968] (motor_hw) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[54.970762] (motor_hw) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[54.976813] (-) TimerEvent: {}
+[55.012376] (motor_hw) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[55.077793] (-) TimerEvent: {}
+[55.182215] (-) TimerEvent: {}
+[55.283261] (-) TimerEvent: {}
+[55.384294] (-) TimerEvent: {}
+[55.485427] (-) TimerEvent: {}
+[55.586685] (-) TimerEvent: {}
+[55.601716] (motor_hw) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[55.674995] (motor_hw) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[55.676301] (motor_hw) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[55.679365] (motor_hw) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[55.686877] (-) TimerEvent: {}
+[55.691684] (motor_hw) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[55.787159] (-) TimerEvent: {}
+[55.888275] (-) TimerEvent: {}
+[55.989307] (-) TimerEvent: {}
+[56.090314] (-) TimerEvent: {}
+[56.191202] (-) TimerEvent: {}
+[56.292032] (-) TimerEvent: {}
+[56.392958] (-) TimerEvent: {}
+[56.493957] (-) TimerEvent: {}
+[56.535186] (motor_hw) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[56.594142] (-) TimerEvent: {}
+[56.694997] (-) TimerEvent: {}
+[56.795863] (-) TimerEvent: {}
+[56.896731] (-) TimerEvent: {}
+[56.997666] (-) TimerEvent: {}
+[57.032441] (motor_hw) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[57.097967] (-) TimerEvent: {}
+[57.177009] (motor_hw) StdoutLine: {'line': b'-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[57.198191] (-) TimerEvent: {}
+[57.299765] (-) TimerEvent: {}
+[57.400861] (-) TimerEvent: {}
+[57.415244] (motor_hw) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[57.501135] (-) TimerEvent: {}
+[57.508850] (motor_hw) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[57.601434] (-) TimerEvent: {}
+[57.619410] (motor_hw) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[57.701733] (-) TimerEvent: {}
+[57.739431] (motor_hw) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[57.802098] (-) TimerEvent: {}
+[57.903906] (-) TimerEvent: {}
+[58.005584] (-) TimerEvent: {}
+[58.107243] (-) TimerEvent: {}
+[58.208187] (-) TimerEvent: {}
+[58.309131] (-) TimerEvent: {}
+[58.321327] (motor_hw) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[58.351314] (motor_hw) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[58.409353] (-) TimerEvent: {}
+[58.510333] (-) TimerEvent: {}
+[58.611298] (-) TimerEvent: {}
+[58.712300] (-) TimerEvent: {}
+[58.804675] (motor_hw) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[58.812464] (-) TimerEvent: {}
+[58.913359] (-) TimerEvent: {}
+[58.915027] (motor_hw) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[59.013641] (-) TimerEvent: {}
+[59.042446] (motor_hw) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[59.113865] (-) TimerEvent: {}
+[59.214879] (-) TimerEvent: {}
+[59.315814] (-) TimerEvent: {}
+[59.416772] (-) TimerEvent: {}
+[59.517741] (-) TimerEvent: {}
+[59.566177] (motor_hw) StdoutLine: {'line': b'-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[59.618047] (-) TimerEvent: {}
+[59.704240] (motor_hw) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[59.718276] (-) TimerEvent: {}
+[59.811940] (motor_hw) StdoutLine: {'line': b'-- Found motor_msgs: 0.0.0 (/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake)\n'}
+[59.818475] (-) TimerEvent: {}
+[59.919491] (-) TimerEvent: {}
+[60.020459] (-) TimerEvent: {}
+[60.121413] (-) TimerEvent: {}
+[60.223059] (-) TimerEvent: {}
+[60.324956] (-) TimerEvent: {}
+[60.426676] (-) TimerEvent: {}
+[60.528401] (-) TimerEvent: {}
+[60.630211] (-) TimerEvent: {}
+[60.714289] (motor_hw) StdoutLine: {'line': b'-- Configuring done (7.1s)\n'}
+[60.730516] (-) TimerEvent: {}
+[60.792253] (motor_hw) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[60.818479] (motor_hw) StdoutLine: {'line': b'-- Build files have been written to: /home/orangepi/Documents/ros2_motor_demo/build/motor_hw\n'}
+[60.830781] (-) TimerEvent: {}
+[60.908375] (motor_hw) CommandEnded: {'returncode': 0}
+[60.911459] (motor_hw) JobProgress: {'identifier': 'motor_hw', 'progress': 'build'}
+[60.913596] (motor_hw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw', '--', '-j4', '-l4'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[60.936129] (-) TimerEvent: {}
+[61.037264] (-) TimerEvent: {}
+[61.138359] (-) TimerEvent: {}
+[61.174883] (motor_hw) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/board_probe_node.dir/src/board_driver.cpp.o\x1b[0m\n'}
+[61.176017] (motor_hw) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/board_probe_node.dir/src/board_probe_node.cpp.o\x1b[0m\n'}
+[61.238599] (-) TimerEvent: {}
+[61.339560] (-) TimerEvent: {}
+[61.440583] (-) TimerEvent: {}
+[61.541632] (-) TimerEvent: {}
+[61.642791] (-) TimerEvent: {}
+[61.744662] (-) TimerEvent: {}
+[61.846264] (-) TimerEvent: {}
+[61.947735] (-) TimerEvent: {}
+[62.048757] (-) TimerEvent: {}
+[62.149842] (-) TimerEvent: {}
+[62.250927] (-) TimerEvent: {}
+[62.351966] (-) TimerEvent: {}
+[62.453014] (-) TimerEvent: {}
+[62.554092] (-) TimerEvent: {}
+[62.655109] (-) TimerEvent: {}
+[62.756075] (-) TimerEvent: {}
+[62.857073] (-) TimerEvent: {}
+[62.958029] (-) TimerEvent: {}
+[63.058988] (-) TimerEvent: {}
+[63.160040] (-) TimerEvent: {}
+[63.261101] (-) TimerEvent: {}
+[63.362881] (-) TimerEvent: {}
+[63.464547] (-) TimerEvent: {}
+[63.565642] (-) TimerEvent: {}
+[63.666782] (-) TimerEvent: {}
+[63.767891] (-) TimerEvent: {}
+[63.868989] (-) TimerEvent: {}
+[63.970087] (-) TimerEvent: {}
+[64.071129] (-) TimerEvent: {}
+[64.172182] (-) TimerEvent: {}
+[64.273219] (-) TimerEvent: {}
+[64.374282] (-) TimerEvent: {}
+[64.475273] (-) TimerEvent: {}
+[64.576315] (-) TimerEvent: {}
+[64.677369] (-) TimerEvent: {}
+[64.778455] (-) TimerEvent: {}
+[64.879436] (-) TimerEvent: {}
+[64.980456] (-) TimerEvent: {}
+[65.081475] (-) TimerEvent: {}
+[65.182608] (-) TimerEvent: {}
+[65.283643] (-) TimerEvent: {}
+[65.384700] (-) TimerEvent: {}
+[65.485735] (-) TimerEvent: {}
+[65.586825] (-) TimerEvent: {}
+[65.687851] (-) TimerEvent: {}
+[65.788858] (-) TimerEvent: {}
+[65.890136] (-) TimerEvent: {}
+[65.992618] (-) TimerEvent: {}
+[66.094711] (-) TimerEvent: {}
+[66.196703] (-) TimerEvent: {}
+[66.298583] (-) TimerEvent: {}
+[66.400104] (-) TimerEvent: {}
+[66.501176] (-) TimerEvent: {}
+[66.602281] (-) TimerEvent: {}
+[66.703371] (-) TimerEvent: {}
+[66.804402] (-) TimerEvent: {}
+[66.905369] (-) TimerEvent: {}
+[67.006438] (-) TimerEvent: {}
+[67.107459] (-) TimerEvent: {}
+[67.208463] (-) TimerEvent: {}
+[67.309447] (-) TimerEvent: {}
+[67.410475] (-) TimerEvent: {}
+[67.511486] (-) TimerEvent: {}
+[67.612487] (-) TimerEvent: {}
+[67.713517] (-) TimerEvent: {}
+[67.814583] (-) TimerEvent: {}
+[67.915589] (-) TimerEvent: {}
+[68.016605] (-) TimerEvent: {}
+[68.117695] (-) TimerEvent: {}
+[68.218804] (-) TimerEvent: {}
+[68.319905] (-) TimerEvent: {}
+[68.421020] (-) TimerEvent: {}
+[68.522053] (-) TimerEvent: {}
+[68.623029] (-) TimerEvent: {}
+[68.723998] (-) TimerEvent: {}
+[68.825028] (-) TimerEvent: {}
+[68.926133] (-) TimerEvent: {}
+[69.027196] (-) TimerEvent: {}
+[69.128274] (-) TimerEvent: {}
+[69.230185] (-) TimerEvent: {}
+[69.331289] (-) TimerEvent: {}
+[69.432383] (-) TimerEvent: {}
+[69.533452] (-) TimerEvent: {}
+[69.634586] (-) TimerEvent: {}
+[69.735580] (-) TimerEvent: {}
+[69.836574] (-) TimerEvent: {}
+[69.937598] (-) TimerEvent: {}
+[70.038661] (-) TimerEvent: {}
+[70.139639] (-) TimerEvent: {}
+[70.240661] (-) TimerEvent: {}
+[70.341651] (-) TimerEvent: {}
+[70.442766] (-) TimerEvent: {}
+[70.543754] (-) TimerEvent: {}
+[70.644787] (-) TimerEvent: {}
+[70.745797] (-) TimerEvent: {}
+[70.846907] (-) TimerEvent: {}
+[70.947929] (-) TimerEvent: {}
+[71.048954] (-) TimerEvent: {}
+[71.149970] (-) TimerEvent: {}
+[71.250978] (-) TimerEvent: {}
+[71.351999] (-) TimerEvent: {}
+[71.453023] (-) TimerEvent: {}
+[71.554073] (-) TimerEvent: {}
+[71.655084] (-) TimerEvent: {}
+[71.756156] (-) TimerEvent: {}
+[71.857188] (-) TimerEvent: {}
+[71.958375] (-) TimerEvent: {}
+[72.059473] (-) TimerEvent: {}
+[72.160553] (-) TimerEvent: {}
+[72.261730] (-) TimerEvent: {}
+[72.362895] (-) TimerEvent: {}
+[72.463996] (-) TimerEvent: {}
+[72.565049] (-) TimerEvent: {}
+[72.666058] (-) TimerEvent: {}
+[72.767031] (-) TimerEvent: {}
+[72.868037] (-) TimerEvent: {}
+[72.969073] (-) TimerEvent: {}
+[73.070136] (-) TimerEvent: {}
+[73.171133] (-) TimerEvent: {}
+[73.272123] (-) TimerEvent: {}
+[73.373097] (-) TimerEvent: {}
+[73.474130] (-) TimerEvent: {}
+[73.575148] (-) TimerEvent: {}
+[73.676170] (-) TimerEvent: {}
+[73.777181] (-) TimerEvent: {}
+[73.878228] (-) TimerEvent: {}
+[73.979231] (-) TimerEvent: {}
+[74.080226] (-) TimerEvent: {}
+[74.181246] (-) TimerEvent: {}
+[74.282303] (-) TimerEvent: {}
+[74.383334] (-) TimerEvent: {}
+[74.484385] (-) TimerEvent: {}
+[74.585473] (-) TimerEvent: {}
+[74.686592] (-) TimerEvent: {}
+[74.787645] (-) TimerEvent: {}
+[74.888774] (-) TimerEvent: {}
+[74.990025] (-) TimerEvent: {}
+[75.091239] (-) TimerEvent: {}
+[75.192310] (-) TimerEvent: {}
+[75.293422] (-) TimerEvent: {}
+[75.394513] (-) TimerEvent: {}
+[75.495522] (-) TimerEvent: {}
+[75.596551] (-) TimerEvent: {}
+[75.697533] (-) TimerEvent: {}
+[75.798592] (-) TimerEvent: {}
+[75.899612] (-) TimerEvent: {}
+[76.000636] (-) TimerEvent: {}
+[76.101689] (-) TimerEvent: {}
+[76.202760] (-) TimerEvent: {}
+[76.303782] (-) TimerEvent: {}
+[76.404815] (-) TimerEvent: {}
+[76.505834] (-) TimerEvent: {}
+[76.606934] (-) TimerEvent: {}
+[76.707965] (-) TimerEvent: {}
+[76.809011] (-) TimerEvent: {}
+[76.910127] (-) TimerEvent: {}
+[77.011146] (-) TimerEvent: {}
+[77.112176] (-) TimerEvent: {}
+[77.213204] (-) TimerEvent: {}
+[77.314260] (-) TimerEvent: {}
+[77.415292] (-) TimerEvent: {}
+[77.516377] (-) TimerEvent: {}
+[77.617447] (-) TimerEvent: {}
+[77.718650] (-) TimerEvent: {}
+[77.819742] (-) TimerEvent: {}
+[77.920888] (-) TimerEvent: {}
+[78.022036] (-) TimerEvent: {}
+[78.123084] (-) TimerEvent: {}
+[78.224602] (-) TimerEvent: {}
+[78.325703] (-) TimerEvent: {}
+[78.426792] (-) TimerEvent: {}
+[78.527821] (-) TimerEvent: {}
+[78.628860] (-) TimerEvent: {}
+[78.729880] (-) TimerEvent: {}
+[78.831055] (-) TimerEvent: {}
+[78.932056] (-) TimerEvent: {}
+[79.033114] (-) TimerEvent: {}
+[79.134162] (-) TimerEvent: {}
+[79.235245] (-) TimerEvent: {}
+[79.336257] (-) TimerEvent: {}
+[79.437296] (-) TimerEvent: {}
+[79.538346] (-) TimerEvent: {}
+[79.639353] (-) TimerEvent: {}
+[79.740414] (-) TimerEvent: {}
+[79.841572] (-) TimerEvent: {}
+[79.942674] (-) TimerEvent: {}
+[80.043685] (-) TimerEvent: {}
+[80.144795] (-) TimerEvent: {}
+[80.246031] (-) TimerEvent: {}
+[80.347115] (-) TimerEvent: {}
+[80.448197] (-) TimerEvent: {}
+[80.549273] (-) TimerEvent: {}
+[80.650367] (-) TimerEvent: {}
+[80.751507] (-) TimerEvent: {}
+[80.852689] (-) TimerEvent: {}
+[80.953873] (-) TimerEvent: {}
+[81.055087] (-) TimerEvent: {}
+[81.156252] (-) TimerEvent: {}
+[81.257279] (-) TimerEvent: {}
+[81.358346] (-) TimerEvent: {}
+[81.459354] (-) TimerEvent: {}
+[81.560344] (-) TimerEvent: {}
+[81.661333] (-) TimerEvent: {}
+[81.762402] (-) TimerEvent: {}
+[81.863433] (-) TimerEvent: {}
+[81.964409] (-) TimerEvent: {}
+[82.065381] (-) TimerEvent: {}
+[82.166363] (-) TimerEvent: {}
+[82.267272] (-) TimerEvent: {}
+[82.368218] (-) TimerEvent: {}
+[82.469271] (-) TimerEvent: {}
+[82.570414] (-) TimerEvent: {}
+[82.671385] (-) TimerEvent: {}
+[82.772347] (-) TimerEvent: {}
+[82.873312] (-) TimerEvent: {}
+[82.974301] (-) TimerEvent: {}
+[83.075273] (-) TimerEvent: {}
+[83.176252] (-) TimerEvent: {}
+[83.277361] (-) TimerEvent: {}
+[83.378490] (-) TimerEvent: {}
+[83.479565] (-) TimerEvent: {}
+[83.580609] (-) TimerEvent: {}
+[83.681642] (-) TimerEvent: {}
+[83.782773] (-) TimerEvent: {}
+[83.883778] (-) TimerEvent: {}
+[83.984790] (-) TimerEvent: {}
+[84.085794] (-) TimerEvent: {}
+[84.186836] (-) TimerEvent: {}
+[84.287836] (-) TimerEvent: {}
+[84.388818] (-) TimerEvent: {}
+[84.489814] (-) TimerEvent: {}
+[84.590855] (-) TimerEvent: {}
+[84.691840] (-) TimerEvent: {}
+[84.792879] (-) TimerEvent: {}
+[84.893874] (-) TimerEvent: {}
+[84.994963] (-) TimerEvent: {}
+[85.096053] (-) TimerEvent: {}
+[85.197056] (-) TimerEvent: {}
+[85.298116] (-) TimerEvent: {}
+[85.399109] (-) TimerEvent: {}
+[85.500111] (-) TimerEvent: {}
+[85.601131] (-) TimerEvent: {}
+[85.702176] (-) TimerEvent: {}
+[85.803182] (-) TimerEvent: {}
+[85.904179] (-) TimerEvent: {}
+[86.005218] (-) TimerEvent: {}
+[86.106347] (-) TimerEvent: {}
+[86.208018] (-) TimerEvent: {}
+[86.309084] (-) TimerEvent: {}
+[86.410837] (-) TimerEvent: {}
+[86.512703] (-) TimerEvent: {}
+[86.614583] (-) TimerEvent: {}
+[86.716383] (-) TimerEvent: {}
+[86.818210] (-) TimerEvent: {}
+[86.919193] (-) TimerEvent: {}
+[87.020220] (-) TimerEvent: {}
+[87.121254] (-) TimerEvent: {}
+[87.222436] (-) TimerEvent: {}
+[87.324207] (-) TimerEvent: {}
+[87.425210] (-) TimerEvent: {}
+[87.526248] (-) TimerEvent: {}
+[87.627281] (-) TimerEvent: {}
+[87.728299] (-) TimerEvent: {}
+[87.829268] (-) TimerEvent: {}
+[87.930314] (-) TimerEvent: {}
+[88.031352] (-) TimerEvent: {}
+[88.132406] (-) TimerEvent: {}
+[88.233430] (-) TimerEvent: {}
+[88.334536] (-) TimerEvent: {}
+[88.435539] (-) TimerEvent: {}
+[88.536595] (-) TimerEvent: {}
+[88.637643] (-) TimerEvent: {}
+[88.738693] (-) TimerEvent: {}
+[88.839748] (-) TimerEvent: {}
+[88.940937] (-) TimerEvent: {}
+[89.042158] (-) TimerEvent: {}
+[89.143314] (-) TimerEvent: {}
+[89.244480] (-) TimerEvent: {}
+[89.345611] (-) TimerEvent: {}
+[89.446770] (-) TimerEvent: {}
+[89.547822] (-) TimerEvent: {}
+[89.648900] (-) TimerEvent: {}
+[89.750099] (-) TimerEvent: {}
+[89.851191] (-) TimerEvent: {}
+[89.952240] (-) TimerEvent: {}
+[90.053248] (-) TimerEvent: {}
+[90.154280] (-) TimerEvent: {}
+[90.255306] (-) TimerEvent: {}
+[90.356318] (-) TimerEvent: {}
+[90.457366] (-) TimerEvent: {}
+[90.558435] (-) TimerEvent: {}
+[90.659441] (-) TimerEvent: {}
+[90.760467] (-) TimerEvent: {}
+[90.861528] (-) TimerEvent: {}
+[90.962618] (-) TimerEvent: {}
+[91.063637] (-) TimerEvent: {}
+[91.164706] (-) TimerEvent: {}
+[91.265762] (-) TimerEvent: {}
+[91.367046] (-) TimerEvent: {}
+[91.468094] (-) TimerEvent: {}
+[91.569135] (-) TimerEvent: {}
+[91.670190] (-) TimerEvent: {}
+[91.771642] (-) TimerEvent: {}
+[91.872840] (-) TimerEvent: {}
+[91.974082] (-) TimerEvent: {}
+[92.078262] (-) TimerEvent: {}
+[92.179501] (-) TimerEvent: {}
+[92.280652] (-) TimerEvent: {}
+[92.381731] (-) TimerEvent: {}
+[92.482891] (-) TimerEvent: {}
+[92.584032] (-) TimerEvent: {}
+[92.685085] (-) TimerEvent: {}
+[92.786200] (-) TimerEvent: {}
+[92.887307] (-) TimerEvent: {}
+[92.988359] (-) TimerEvent: {}
+[93.089398] (-) TimerEvent: {}
+[93.190556] (-) TimerEvent: {}
+[93.291613] (-) TimerEvent: {}
+[93.392637] (-) TimerEvent: {}
+[93.493673] (-) TimerEvent: {}
+[93.594750] (-) TimerEvent: {}
+[93.695742] (-) TimerEvent: {}
+[93.796763] (-) TimerEvent: {}
+[93.897831] (-) TimerEvent: {}
+[93.998871] (-) TimerEvent: {}
+[94.099880] (-) TimerEvent: {}
+[94.200876] (-) TimerEvent: {}
+[94.301863] (-) TimerEvent: {}
+[94.402899] (-) TimerEvent: {}
+[94.503899] (-) TimerEvent: {}
+[94.604928] (-) TimerEvent: {}
+[94.706018] (-) TimerEvent: {}
+[94.807131] (-) TimerEvent: {}
+[94.908192] (-) TimerEvent: {}
+[95.009291] (-) TimerEvent: {}
+[95.111460] (-) TimerEvent: {}
+[95.213340] (-) TimerEvent: {}
+[95.315202] (-) TimerEvent: {}
+[95.417164] (-) TimerEvent: {}
+[95.518194] (-) TimerEvent: {}
+[95.607514] (motor_hw) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable board_probe_node\x1b[0m\n'}
+[95.618442] (-) TimerEvent: {}
+[95.719461] (-) TimerEvent: {}
+[95.820538] (-) TimerEvent: {}
+[95.921599] (-) TimerEvent: {}
+[96.022631] (-) TimerEvent: {}
+[96.123654] (-) TimerEvent: {}
+[96.224682] (-) TimerEvent: {}
+[96.325768] (-) TimerEvent: {}
+[96.426734] (-) TimerEvent: {}
+[96.527669] (-) TimerEvent: {}
+[96.628639] (-) TimerEvent: {}
+[96.729642] (-) TimerEvent: {}
+[96.830736] (-) TimerEvent: {}
+[96.931923] (-) TimerEvent: {}
+[97.033165] (-) TimerEvent: {}
+[97.134438] (-) TimerEvent: {}
+[97.235648] (-) TimerEvent: {}
+[97.336689] (-) TimerEvent: {}
+[97.438130] (-) TimerEvent: {}
+[97.539200] (-) TimerEvent: {}
+[97.640241] (-) TimerEvent: {}
+[97.741298] (-) TimerEvent: {}
+[97.842428] (-) TimerEvent: {}
+[97.944580] (-) TimerEvent: {}
+[98.046702] (-) TimerEvent: {}
+[98.148582] (-) TimerEvent: {}
+[98.249676] (-) TimerEvent: {}
+[98.257866] (motor_hw) StdoutLine: {'line': b'[100%] Built target board_probe_node\n'}
+[98.312460] (motor_hw) CommandEnded: {'returncode': 0}
+[98.315347] (motor_hw) JobProgress: {'identifier': 'motor_hw', 'progress': 'install'}
+[98.316561] (motor_hw) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[98.350002] (-) TimerEvent: {}
+[98.355739] (motor_hw) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[98.357805] (motor_hw) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[98.359824] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/lib/motor_hw/board_probe_node\n'}
+[98.404808] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/ament_index/resource_index/package_run_dependencies/motor_hw\n'}
+[98.449491] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/ament_index/resource_index/parent_prefix_path/motor_hw\n'}
+[98.450446] (-) TimerEvent: {}
+[98.493158] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/environment/ament_prefix_path.sh\n'}
+[98.536274] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/environment/ament_prefix_path.dsv\n'}
+[98.550738] (-) TimerEvent: {}
+[98.579439] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/environment/path.sh\n'}
+[98.622778] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/environment/path.dsv\n'}
+[98.650970] (-) TimerEvent: {}
+[98.666404] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/local_setup.bash\n'}
+[98.710398] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/local_setup.sh\n'}
+[98.751230] (-) TimerEvent: {}
+[98.753534] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/local_setup.zsh\n'}
+[98.796690] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/local_setup.dsv\n'}
+[98.839427] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.dsv\n'}
+[98.851466] (-) TimerEvent: {}
+[98.883007] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/ament_index/resource_index/packages/motor_hw\n'}
+[98.926532] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/cmake/motor_hwConfig.cmake\n'}
+[98.951717] (-) TimerEvent: {}
+[98.973314] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/cmake/motor_hwConfig-version.cmake\n'}
+[99.018012] (motor_hw) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.xml\n'}
+[99.051984] (-) TimerEvent: {}
+[99.069368] (motor_hw) CommandEnded: {'returncode': 0}
+[99.141563] (motor_hw) JobEnded: {'identifier': 'motor_hw', 'rc': 0}
+[99.146534] (motor_bringup) JobStarted: {'identifier': 'motor_bringup'}
+[99.160391] (-) TimerEvent: {}
+[99.187632] (motor_bringup) JobProgress: {'identifier': 'motor_bringup', 'progress': 'cmake'}
+[99.189540] (motor_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/orangepi/Documents/ros2_motor_demo/src/motor_bringup', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[99.260686] (-) TimerEvent: {}
+[99.361739] (-) TimerEvent: {}
+[99.462791] (-) TimerEvent: {}
+[99.564573] (-) TimerEvent: {}
+[99.576933] (motor_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[99.664917] (-) TimerEvent: {}
+[99.766008] (-) TimerEvent: {}
+[99.867095] (-) TimerEvent: {}
+[99.964684] (motor_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[99.967184] (-) TimerEvent: {}
+[100.031829] (motor_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[100.067486] (-) TimerEvent: {}
+[100.168493] (-) TimerEvent: {}
+[100.269515] (-) TimerEvent: {}
+[100.370611] (-) TimerEvent: {}
+[100.471712] (-) TimerEvent: {}
+[100.555134] (motor_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[100.571965] (-) TimerEvent: {}
+[100.629838] (motor_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[100.631279] (motor_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[100.633671] (motor_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[100.672260] (-) TimerEvent: {}
+[100.674987] (motor_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[100.772542] (-) TimerEvent: {}
+[100.873644] (-) TimerEvent: {}
+[100.974967] (-) TimerEvent: {}
+[101.076129] (-) TimerEvent: {}
+[101.178192] (-) TimerEvent: {}
+[101.264553] (motor_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[101.278416] (-) TimerEvent: {}
+[101.338306] (motor_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[101.339644] (motor_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[101.342729] (motor_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[101.355157] (motor_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[101.378637] (-) TimerEvent: {}
+[101.479578] (-) TimerEvent: {}
+[101.580693] (-) TimerEvent: {}
+[101.682597] (-) TimerEvent: {}
+[101.784255] (-) TimerEvent: {}
+[101.885109] (-) TimerEvent: {}
+[101.985998] (-) TimerEvent: {}
+[102.086988] (-) TimerEvent: {}
+[102.187944] (-) TimerEvent: {}
+[102.236974] (motor_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[102.288157] (-) TimerEvent: {}
+[102.389061] (-) TimerEvent: {}
+[102.490103] (-) TimerEvent: {}
+[102.591228] (-) TimerEvent: {}
+[102.692232] (-) TimerEvent: {}
+[102.735791] (motor_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[102.792471] (-) TimerEvent: {}
+[102.893561] (-) TimerEvent: {}
+[102.995521] (-) TimerEvent: {}
+[103.096378] (-) TimerEvent: {}
+[103.197257] (-) TimerEvent: {}
+[103.298222] (-) TimerEvent: {}
+[103.399266] (-) TimerEvent: {}
+[103.500326] (-) TimerEvent: {}
+[103.601439] (-) TimerEvent: {}
+[103.615785] (motor_bringup) StdoutLine: {'line': b'-- Configuring done (4.4s)\n'}
+[103.630831] (motor_bringup) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[103.639602] (motor_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/orangepi/Documents/ros2_motor_demo/build/motor_bringup\n'}
+[103.672343] (motor_bringup) CommandEnded: {'returncode': 0}
+[103.674933] (motor_bringup) JobProgress: {'identifier': 'motor_bringup', 'progress': 'build'}
+[103.676267] (motor_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup', '--', '-j4', '-l4'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[103.701726] (-) TimerEvent: {}
+[103.802850] (-) TimerEvent: {}
+[103.896895] (motor_bringup) CommandEnded: {'returncode': 0}
+[103.899809] (motor_bringup) JobProgress: {'identifier': 'motor_bringup', 'progress': 'install'}
+[103.900858] (motor_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup'], 'cwd': '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'SSH_CLIENT': '192.168.1.117 52638 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/Documents/ros2_motor_demo', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/orangepi/Documents/ros2_examples/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '31', 'PATH': '/home/orangepi/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/orangepi/.local/bin:/home/orangepi/.local/bin:/usr/local/go/bin', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.117 52638 192.168.1.123 22', 'PYTHONPATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:/home/orangepi/Documents/ros2_examples/ros2_ws/build/pkg_helloworld_py:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy'}), 'shell': False}
+[103.904209] (-) TimerEvent: {}
+[103.942919] (motor_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[103.945340] (motor_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[103.948485] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/launch/launch.py\n'}
+[103.996449] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/config/board.yaml\n'}
+[104.004463] (-) TimerEvent: {}
+[104.040263] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/ament_index/resource_index/package_run_dependencies/motor_bringup\n'}
+[104.087187] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/ament_index/resource_index/parent_prefix_path/motor_bringup\n'}
+[104.104759] (-) TimerEvent: {}
+[104.133425] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/environment/ament_prefix_path.sh\n'}
+[104.176171] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/environment/ament_prefix_path.dsv\n'}
+[104.205024] (-) TimerEvent: {}
+[104.219549] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/environment/path.sh\n'}
+[104.262317] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/environment/path.dsv\n'}
+[104.305144] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/local_setup.bash\n'}
+[104.306101] (-) TimerEvent: {}
+[104.349378] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/local_setup.sh\n'}
+[104.392850] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/local_setup.zsh\n'}
+[104.406404] (-) TimerEvent: {}
+[104.435313] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/local_setup.dsv\n'}
+[104.478031] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.dsv\n'}
+[104.506648] (-) TimerEvent: {}
+[104.521691] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/ament_index/resource_index/packages/motor_bringup\n'}
+[104.565994] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/cmake/motor_bringupConfig.cmake\n'}
+[104.606923] (-) TimerEvent: {}
+[104.608745] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/cmake/motor_bringupConfig-version.cmake\n'}
+[104.651139] (motor_bringup) StdoutLine: {'line': b'-- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.xml\n'}
+[104.700453] (motor_bringup) CommandEnded: {'returncode': 0}
+[104.707015] (-) TimerEvent: {}
+[104.785183] (motor_bringup) JobEnded: {'identifier': 'motor_bringup', 'rc': 0}
+[104.789065] (-) EventReactorShutdown: {}

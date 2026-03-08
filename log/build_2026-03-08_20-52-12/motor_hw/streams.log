@@ -1,0 +1,59 @@
+[0.050s] Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/orangepi/Documents/ros2_motor_demo/src/motor_hw -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw
+[0.422s] -- The C compiler identification is GNU 13.3.0
+[0.803s] -- The CXX compiler identification is GNU 13.3.0
+[0.870s] -- Detecting C compiler ABI info
+[1.406s] -- Detecting C compiler ABI info - done
+[1.480s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.482s] -- Detecting C compile features
+[1.485s] -- Detecting C compile features - done
+[1.526s] -- Detecting CXX compiler ABI info
+[2.116s] -- Detecting CXX compiler ABI info - done
+[2.189s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.190s] -- Detecting CXX compile features
+[2.193s] -- Detecting CXX compile features - done
+[2.205s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.049s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.546s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.691s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.929s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.023s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.133s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.253s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.835s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.865s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.319s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.429s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[5.556s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.080s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[6.218s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[6.326s] -- Found motor_msgs: 0.0.0 (/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/cmake)
+[7.228s] -- Configuring done (7.1s)
+[7.306s] -- Generating done (0.0s)
+[7.332s] -- Build files have been written to: /home/orangepi/Documents/ros2_motor_demo/build/motor_hw
+[7.423s] Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/orangepi/Documents/ros2_motor_demo/src/motor_hw -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw
+[7.428s] Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/Documents/ros2_motor_demo/build/motor_hw -- -j4 -l4
+[7.689s] [ 66%] [32mBuilding CXX object CMakeFiles/board_probe_node.dir/src/board_driver.cpp.o[0m
+[7.690s] [ 66%] [32mBuilding CXX object CMakeFiles/board_probe_node.dir/src/board_probe_node.cpp.o[0m
+[42.121s] [100%] [32m[1mLinking CXX executable board_probe_node[0m
+[44.772s] [100%] Built target board_probe_node
+[44.826s] Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/Documents/ros2_motor_demo/build/motor_hw -- -j4 -l4
+[44.832s] Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/Documents/ros2_motor_demo/build/motor_hw
+[44.869s] -- Install configuration: ""
+[44.871s] -- Execute custom install script
+[44.873s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/lib/motor_hw/board_probe_node
+[44.919s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/ament_index/resource_index/package_run_dependencies/motor_hw
+[44.963s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/ament_index/resource_index/parent_prefix_path/motor_hw
+[45.007s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/environment/ament_prefix_path.sh
+[45.050s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/environment/ament_prefix_path.dsv
+[45.093s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/environment/path.sh
+[45.137s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/environment/path.dsv
+[45.180s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/local_setup.bash
+[45.224s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/local_setup.sh
+[45.267s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/local_setup.zsh
+[45.310s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/local_setup.dsv
+[45.353s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.dsv
+[45.397s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/ament_index/resource_index/packages/motor_hw
+[45.440s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/cmake/motor_hwConfig.cmake
+[45.487s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/cmake/motor_hwConfig-version.cmake
+[45.532s] -- Symlinking: /home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.xml
+[45.585s] Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/Documents/ros2_motor_demo/build/motor_hw

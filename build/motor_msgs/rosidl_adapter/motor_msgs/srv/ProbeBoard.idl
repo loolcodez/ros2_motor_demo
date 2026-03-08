@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from motor_msgs/srv/ProbeBoard.srv
+// generated code does not contain a copyright notice
+
+
+module motor_msgs {
+  module srv {
+    struct ProbeBoard_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct ProbeBoard_Response {
+      boolean detected;
+
+      string board_name;
+
+      string device_path;
+
+      string message;
+    };
+  };
+};

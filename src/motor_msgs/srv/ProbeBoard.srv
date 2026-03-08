@@ -1,0 +1,5 @@
+---
+bool detected
+string board_name
+string device_path
+string message

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "motor_msgs/srv/ProbeBoard_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "motor_msgs/srv/ProbeBoard_Request",
+      "hash_string": "RIHS01_7e4d4bb5ce3709f91c19e9c0d59b066a188d88f099d5eca6ebb2d9159a7d9db3"
+    }
+  ]
+}

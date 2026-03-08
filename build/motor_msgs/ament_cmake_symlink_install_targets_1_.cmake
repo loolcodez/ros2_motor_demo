@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/rosidl_generator_py/motor_msgs/motor_msgs_s__rosidl_typesupport_introspection_c.so" "TARGETS" "motor_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/motor_msgs")

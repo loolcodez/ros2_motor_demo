@@ -1,0 +1,312 @@
+[0.750s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.751s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffaa123e90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffaa334cb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffaa334cb0>>, mixin_verb=('build',))
+[0.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.994s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.994s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/orangepi/Documents/ros2_motor_demo'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extension 'ignore'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extension 'ignore_ament_install'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extensions ['colcon_pkg']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extension 'colcon_pkg'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extensions ['colcon_meta']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extension 'colcon_meta'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extensions ['ros']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_bringup) by extension 'ros'
+[1.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_bringup' with type 'ros.ament_cmake' and name 'motor_bringup'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extensions ['ignore', 'ignore_ament_install']
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extension 'ignore'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extension 'ignore_ament_install'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extensions ['colcon_pkg']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extension 'colcon_pkg'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extensions ['colcon_meta']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extension 'colcon_meta'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extensions ['ros']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_hw) by extension 'ros'
+[1.200s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_hw' with type 'ros.ament_cmake' and name 'motor_hw'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extension 'ignore'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extension 'ignore_ament_install'
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extensions ['colcon_pkg']
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extension 'colcon_pkg'
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extensions ['colcon_meta']
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extension 'colcon_meta'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extensions ['ros']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_msgs) by extension 'ros'
+[1.205s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_msgs' with type 'ros.ament_cmake' and name 'motor_msgs'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extensions ['ignore', 'ignore_ament_install']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extension 'ignore'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extension 'ignore_ament_install'
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extensions ['colcon_pkg']
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extension 'colcon_pkg'
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extensions ['colcon_meta']
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extension 'colcon_meta'
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extensions ['ros']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extension 'ros'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extensions ['cmake', 'python']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extension 'cmake'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extension 'python'
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extensions ['python_setup_py']
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/src) by extension 'python_setup_py'
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extensions ['ignore', 'ignore_ament_install']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extension 'ignore'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extension 'ignore_ament_install'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extensions ['colcon_pkg']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extension 'colcon_pkg'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extensions ['colcon_meta']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extension 'colcon_meta'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extensions ['ros']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extension 'ros'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extensions ['cmake', 'python']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extension 'cmake'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extension 'python'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extensions ['python_setup_py']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/srv) by extension 'python_setup_py'
+[1.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.317s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'cmake_args' from command line to 'None'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'cmake_target' from command line to 'None'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.319s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.319s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.319s] Level 5:colcon.colcon_core.verb:set package 'motor_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.319s] DEBUG:colcon.colcon_core.verb:Building package 'motor_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs', 'merge_install': False, 'path': '/home/orangepi/Documents/ros2_motor_demo/src/motor_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.321s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'cmake_args' from command line to 'None'
+[1.321s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'cmake_target' from command line to 'None'
+[1.321s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.321s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'cmake_clean_cache' from command line to 'False'
+[1.321s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'cmake_clean_first' from command line to 'False'
+[1.322s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'cmake_force_configure' from command line to 'False'
+[1.322s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'ament_cmake_args' from command line to 'None'
+[1.322s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'catkin_cmake_args' from command line to 'None'
+[1.322s] Level 5:colcon.colcon_core.verb:set package 'motor_hw' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.322s] DEBUG:colcon.colcon_core.verb:Building package 'motor_hw' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw', 'merge_install': False, 'path': '/home/orangepi/Documents/ros2_motor_demo/src/motor_hw', 'symlink_install': True, 'test_result_base': None}
+[1.324s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'cmake_args' from command line to 'None'
+[1.324s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'cmake_target' from command line to 'None'
+[1.324s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.324s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.325s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.325s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.325s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.325s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.325s] Level 5:colcon.colcon_core.verb:set package 'motor_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.325s] DEBUG:colcon.colcon_core.verb:Building package 'motor_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup', 'merge_install': False, 'path': '/home/orangepi/Documents/ros2_motor_demo/src/motor_bringup', 'symlink_install': True, 'test_result_base': None}
+[1.326s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.331s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.332s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/orangepi/Documents/ros2_motor_demo/src/motor_msgs' with build type 'ament_cmake'
+[1.333s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/orangepi/Documents/ros2_motor_demo/src/motor_msgs'
+[1.342s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.343s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.344s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy /usr/bin/cmake /home/orangepi/Documents/ros2_motor_demo/src/motor_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs
+[20.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy /usr/bin/cmake /home/orangepi/Documents/ros2_motor_demo/src/motor_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs
+[20.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy /usr/bin/cmake --build /home/orangepi/Documents/ros2_motor_demo/build/motor_msgs -- -j4 -l4
+[50.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy /usr/bin/cmake --build /home/orangepi/Documents/ros2_motor_demo/build/motor_msgs -- -j4 -l4
+[50.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy /usr/bin/cmake --install /home/orangepi/Documents/ros2_motor_demo/build/motor_msgs
+[54.636s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_msgs)
+[54.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy /usr/bin/cmake --install /home/orangepi/Documents/ros2_motor_demo/build/motor_msgs
+[54.651s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs' for CMake module files
+[54.656s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs' for CMake config files
+[54.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_msgs', 'cmake_prefix_path')
+[54.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/cmake_prefix_path.ps1'
+[54.675s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/cmake_prefix_path.dsv'
+[54.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/cmake_prefix_path.sh'
+[54.690s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib'
+[54.692s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_msgs', 'ld_library_path_lib')
+[54.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/ld_library_path_lib.ps1'
+[54.695s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/ld_library_path_lib.dsv'
+[54.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/ld_library_path_lib.sh'
+[54.698s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/bin'
+[54.699s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/pkgconfig/motor_msgs.pc'
+[54.713s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages'
+[54.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_msgs', 'pythonpath')
+[54.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/pythonpath.ps1'
+[54.717s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/pythonpath.dsv'
+[54.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/pythonpath.sh'
+[54.722s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/bin'
+[54.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.ps1'
+[54.728s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.dsv'
+[54.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.sh'
+[54.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.bash'
+[54.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.zsh'
+[54.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/colcon-core/packages/motor_msgs)
+[54.745s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_msgs)
+[54.746s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs' for CMake module files
+[54.750s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs' for CMake config files
+[54.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_msgs', 'cmake_prefix_path')
+[54.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/cmake_prefix_path.ps1'
+[54.758s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/cmake_prefix_path.dsv'
+[54.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/cmake_prefix_path.sh'
+[54.768s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib'
+[54.769s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_msgs', 'ld_library_path_lib')
+[54.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/ld_library_path_lib.ps1'
+[54.774s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/ld_library_path_lib.dsv'
+[54.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/ld_library_path_lib.sh'
+[54.780s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/bin'
+[54.780s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/pkgconfig/motor_msgs.pc'
+[54.781s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages'
+[54.782s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_msgs', 'pythonpath')
+[54.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/pythonpath.ps1'
+[54.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/pythonpath.dsv'
+[54.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/hook/pythonpath.sh'
+[54.793s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/bin'
+[54.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.ps1'
+[54.799s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.dsv'
+[54.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.sh'
+[54.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.bash'
+[54.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/motor_msgs/package.zsh'
+[54.809s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/share/colcon-core/packages/motor_msgs)
+[54.811s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/orangepi/Documents/ros2_motor_demo/src/motor_hw' with build type 'ament_cmake'
+[54.811s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/orangepi/Documents/ros2_motor_demo/src/motor_hw'
+[54.813s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[54.813s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[54.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/orangepi/Documents/ros2_motor_demo/src/motor_hw -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw
+[62.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/orangepi/Documents/ros2_motor_demo/src/motor_hw -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw
+[62.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/Documents/ros2_motor_demo/build/motor_hw -- -j4 -l4
+[99.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/Documents/ros2_motor_demo/build/motor_hw -- -j4 -l4
+[99.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/Documents/ros2_motor_demo/build/motor_hw
+[100.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_hw)
+[100.400s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw' for CMake module files
+[100.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_hw' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/Documents/ros2_motor_demo/build/motor_hw
+[100.405s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw' for CMake config files
+[100.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_hw', 'cmake_prefix_path')
+[100.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/hook/cmake_prefix_path.ps1'
+[100.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/hook/cmake_prefix_path.dsv'
+[100.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/hook/cmake_prefix_path.sh'
+[100.414s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/lib'
+[100.415s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/bin'
+[100.415s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/lib/pkgconfig/motor_hw.pc'
+[100.416s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/lib/python3.12/site-packages'
+[100.418s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/bin'
+[100.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.ps1'
+[100.422s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.dsv'
+[100.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.sh'
+[100.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.bash'
+[100.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.zsh'
+[100.429s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/colcon-core/packages/motor_hw)
+[100.432s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_hw)
+[100.433s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw' for CMake module files
+[100.436s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw' for CMake config files
+[100.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_hw', 'cmake_prefix_path')
+[100.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/hook/cmake_prefix_path.ps1'
+[100.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/hook/cmake_prefix_path.dsv'
+[100.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/hook/cmake_prefix_path.sh'
+[100.451s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/lib'
+[100.451s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/bin'
+[100.451s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/lib/pkgconfig/motor_hw.pc'
+[100.453s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/lib/python3.12/site-packages'
+[100.454s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/bin'
+[100.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.ps1'
+[100.458s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.dsv'
+[100.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.sh'
+[100.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.bash'
+[100.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/motor_hw/package.zsh'
+[100.469s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orangepi/Documents/ros2_motor_demo/install/motor_hw/share/colcon-core/packages/motor_hw)
+[100.471s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/orangepi/Documents/ros2_motor_demo/src/motor_bringup' with build type 'ament_cmake'
+[100.471s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/orangepi/Documents/ros2_motor_demo/src/motor_bringup'
+[100.473s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[100.473s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[100.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/orangepi/Documents/ros2_motor_demo/src/motor_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup
+[105.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/orangepi/Documents/ros2_motor_demo/src/motor_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup
+[105.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/Documents/ros2_motor_demo/build/motor_bringup -- -j4 -l4
+[105.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/Documents/ros2_motor_demo/build/motor_bringup -- -j4 -l4
+[105.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/Documents/ros2_motor_demo/build/motor_bringup
+[106.029s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_bringup)
+[106.031s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup' for CMake module files
+[106.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/Documents/ros2_motor_demo/build/motor_bringup' returned '0': AMENT_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_hw:/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/orangepi/Documents/ros2_examples/ros2_ws/install/pkg_helloworld_py:/opt/ros/jazzy LD_LIBRARY_PATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/Documents/ros2_motor_demo/install/motor_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/Documents/ros2_motor_demo/build/motor_bringup
+[106.035s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup' for CMake config files
+[106.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_bringup', 'cmake_prefix_path')
+[106.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/hook/cmake_prefix_path.ps1'
+[106.041s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/hook/cmake_prefix_path.dsv'
+[106.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/hook/cmake_prefix_path.sh'
+[106.045s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/bin'
+[106.045s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/lib/pkgconfig/motor_bringup.pc'
+[106.047s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/lib/python3.12/site-packages'
+[106.048s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/bin'
+[106.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.ps1'
+[106.052s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.dsv'
+[106.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.sh'
+[106.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.bash'
+[106.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.zsh'
+[106.058s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/colcon-core/packages/motor_bringup)
+[106.061s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_bringup)
+[106.062s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup' for CMake module files
+[106.065s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup' for CMake config files
+[106.067s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_bringup', 'cmake_prefix_path')
+[106.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/hook/cmake_prefix_path.ps1'
+[106.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/hook/cmake_prefix_path.dsv'
+[106.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/hook/cmake_prefix_path.sh'
+[106.077s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/bin'
+[106.077s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/lib/pkgconfig/motor_bringup.pc'
+[106.079s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/lib/python3.12/site-packages'
+[106.080s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/bin'
+[106.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.ps1'
+[106.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.dsv'
+[106.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.sh'
+[106.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.bash'
+[106.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/motor_bringup/package.zsh'
+[106.112s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orangepi/Documents/ros2_motor_demo/install/motor_bringup/share/colcon-core/packages/motor_bringup)
+[106.114s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[106.116s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[106.117s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[106.117s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[106.153s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[106.153s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[106.154s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[106.184s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[106.185s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orangepi/Documents/ros2_motor_demo/install/local_setup.ps1'
+[106.191s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/orangepi/Documents/ros2_motor_demo/install/_local_setup_util_ps1.py'
+[106.199s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orangepi/Documents/ros2_motor_demo/install/setup.ps1'
+[106.206s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orangepi/Documents/ros2_motor_demo/install/local_setup.sh'
+[106.211s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/orangepi/Documents/ros2_motor_demo/install/_local_setup_util_sh.py'
+[106.216s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orangepi/Documents/ros2_motor_demo/install/setup.sh'
+[106.223s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orangepi/Documents/ros2_motor_demo/install/local_setup.bash'
+[106.227s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orangepi/Documents/ros2_motor_demo/install/setup.bash'
+[106.234s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orangepi/Documents/ros2_motor_demo/install/local_setup.zsh'
+[106.237s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orangepi/Documents/ros2_motor_demo/install/setup.zsh'

@@ -1,0 +1,1 @@
+/home/orangepi/Documents/ros2_motor_demo/build/motor_msgs/ament_cmake_environment_hooks/local_setup.zsh
